@@ -14,11 +14,14 @@ Time spent: **X** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2
     - Fixed in version: 4.2.3
-  - [X] GIF Walkthrough: 
+  - [X] GIF Walkthrough:
+      (https://github.com/dinotrooper/codepath_week7_8/blob/master/vulnerability_one_gifs/setupOne.gif)
+      (https://github.com/dinotrooper/codepath_week7_8/blob/master/vulnerability_one_gifs/setupTwo.gif)
+      (https://github.com/dinotrooper/codepath_week7_8/blob/master/vulnerability_one_gifs/setupThree.gif) 
   - [X] Steps to recreate: 
       1. Create a user that create posts (Author or Contributor)
       2. Login to that user and create a post
-      3. Using the HTML input mode, insert html with a HTML DOM Event inside a link tags. 
+      3. Using the HTML input mode, insert html with a HTML DOM Event inside ink tags. 
           Example: `<a href="[caption code=">]</a><a title=" onmouseover=alert('XSS!')  ">link</a>`
       4. Log out of the user and login as an administrator.
       5. View the page and hover over the link.
