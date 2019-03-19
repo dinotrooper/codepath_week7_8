@@ -9,15 +9,21 @@ Time spent: **X** hours spent in total
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Name or ID
+1. (Required) Authenticated Stored Cross-Site Scripting (XSS)
   - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.3
   - [ ] GIF Walkthrough: 
   - [ ] Steps to recreate: 
+      1. Create a user that create posts (Author or Contributor)
+      2. Login to that user and create a post
+      3. Using the HTML input mode, insert html with a HTML DOM Event inside a link tags. 
+          Example: <a href="[caption code=">]</a><a title=" onmouseover=alert('XSS!')  ">link</a>
+      4. Log out of the user and login as an administrator.
+      5. View the page and hover over the link.
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [Link 1](https://core.trac.wordpress.org/browser/trunk/src/wp-includes/class-wp-embed.php?rev=33359)
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
