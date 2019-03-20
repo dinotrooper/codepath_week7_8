@@ -15,7 +15,7 @@ Time spent: **X** hours spent in total
     - Tested in version: 4.2
     - Fixed in version: 4.2.3
   - [X] GIF Walkthrough:
-      <img src="setupOne.gif"/>
+      <img src="vulernability_one_gifs/setupOne.gif"/>
       [First GIF](https://github.com/dinotrooper/codepath_week7_8/blob/master/vulnerability_one_gifs/setupOne.gif)
       [Second GIF](https://github.com/dinotrooper/codepath_week7_8/blob/master/vulnerability_one_gifs/setupTwo.gif)
       [Final GIF](https://github.com/dinotrooper/codepath_week7_8/blob/master/vulnerability_one_gifs/setupThree.gif) 
