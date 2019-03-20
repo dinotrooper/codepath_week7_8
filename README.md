@@ -15,9 +15,10 @@ Time spent: **X** hours spent in total
     - Tested in version: 4.2
     - Fixed in version: 4.2.3
   - [X] GIF Walkthrough:
-      * [First GIF](https://github.com/dinotrooper/codepath_week7_8/blob/master/vulnerability_one_gifs/setupOne.gif)
-      * [Second GIF](https://github.com/dinotrooper/codepath_week7_8/blob/master/vulnerability_one_gifs/setupTwo.gif)
-      * [Final GIF](https://github.com/dinotrooper/codepath_week7_8/blob/master/vulnerability_one_gifs/setupThree.gif) 
+      <img src="setupOne.gif"/>
+      [First GIF](https://github.com/dinotrooper/codepath_week7_8/blob/master/vulnerability_one_gifs/setupOne.gif)
+      [Second GIF](https://github.com/dinotrooper/codepath_week7_8/blob/master/vulnerability_one_gifs/setupTwo.gif)
+      [Final GIF](https://github.com/dinotrooper/codepath_week7_8/blob/master/vulnerability_one_gifs/setupThree.gif) 
   - [X] Steps to recreate: 
       1. Create a user that create posts (Author or Contributor)
       2. Login to that user and create a post
@@ -81,7 +82,7 @@ Describe any challenges encountered while doing the work
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2019] [Lee Ward]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
