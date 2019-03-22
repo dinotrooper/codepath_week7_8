@@ -9,7 +9,7 @@ Time spent: **X** hours spent in total
 
 ## Pentesting Report
 
-1. (Required) Authenticated Stored Cross-Site Scripting (XSS)
+1. (Required) Authenticated Stored Cross-Site Scripting (XSS) - CVE-2015-5622
   - [X] Summary: 
     - Vulnerability types: XSS
     - Tested in version: 4.2
