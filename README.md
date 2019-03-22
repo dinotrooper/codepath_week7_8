@@ -15,9 +15,9 @@ Time spent: **X** hours spent in total
     - Tested in version: 4.2
     - Fixed in version: 4.2.3
   - [X] GIF Walkthrough:
-      <img src="vulnerability_one_gifs/setupOne.gif"/>
-      <img src="vulnerability_one_gifs/setupTwo.gif"/>
-      <img src="vulnerability_one_gifs/setupThree.gif"/>
+      <img src="vulnerability_one/setupOne.gif"/>
+      <img src="vulnerability_one/setupTwo.gif"/>
+      <img src="vulnerability_one/setupThree.gif"/>
   - [X] Steps to recreate: 
       1. Create a user that create posts (Author or Contributor)
       2. Login to that user and create a post
@@ -27,15 +27,20 @@ Time spent: **X** hours spent in total
       5. View the page and hover over the link.
   - [X] Affected source code:
     - [Source File](https://core.trac.wordpress.org/browser/trunk/src/wp-includes/class-wp-embed.php?rev=33359)
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+1. (Required) ocal URIs Server Side Request Forgery (SSRF) - CVE-2016-2222
+  - [X] Summary: 
+    - Vulnerability types: SSRF
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.7
+  - [X] GIF Walkthrough:
+      <img src="vulnerability_two/setupOne.gif"/>
+      <img src="vulnerability_two/setupTwo.gif"/>
+  - [X] Steps to recreate: 
+      1. Log into WordPress
+      2. Create and host a webpage with malicious content similar to `<img src="//wpdistillery/wp-admin/press-this.php?u=http://0.0.0.0:8080&url-scan-submit=Scan" />`
+      3. Visit the site while logged in to WordPress
+  - [X] Affected source code:
+    - [Source Code](https://core.trac.wordpress.org/changeset/36442)
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
