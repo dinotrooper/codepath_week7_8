@@ -26,8 +26,8 @@ Time spent: **X** hours spent in total
       4. Log out of the user and login as an administrator.
       5. View the page and hover over the link.
   - [X] Affected source code:
-    - [Source File](https://core.trac.wordpress.org/browser/trunk/src/wp-includes/class-wp-embed.php?rev=33359)
-1. (Required) ocal URIs Server Side Request Forgery (SSRF) - CVE-2016-2222
+    - [Source File](https://core.trac.wordpress.org/changeset/33359)
+2. (Required) Local URIs Server Side Request Forgery (SSRF) - CVE-2016-2222
   - [X] Summary: 
     - Vulnerability types: SSRF
     - Tested in version: 4.2
@@ -41,7 +41,18 @@ Time spent: **X** hours spent in total
       3. Visit the site while logged in to WordPress
   - [X] Affected source code:
     - [Source Code](https://core.trac.wordpress.org/changeset/36442)
-1. (Required) Vulnerability Name or ID
+3. (Required) Unauthenticated Stored Cross-Site Scripting (XSS) - CVE 2015-3440
+  - [X] Summary: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.1
+  - [X] GIF Walkthrough: 
+      <img src="vulnerability_three/setupOne.gif"/>
+  - [X] Steps to recreate: 
+      1. Make a comment similar to `<a title='x onmouseover=alert(unescape(/XSS/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>` except with 64,000 A's.
+  - [X] Affected source code:
+    - [Source Code](https://core.trac.wordpress.org/changeset/32299)
+4. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
     - Tested in version:
@@ -50,16 +61,7 @@ Time spent: **X** hours spent in total
   - [ ] Steps to recreate: 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Optional) Vulnerability Name or ID
+5. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
     - Tested in version:
@@ -77,6 +79,7 @@ List any additional assets, such as scripts or files
 
 - [WordPress Source Browser](https://core.trac.wordpress.org/browser/)
 - [WordPress Developer Reference](https://developer.wordpress.org/reference/)
+- [Info about CVE 2015-2213](https://blog.checkpoint.com/2015/08/11/finding-vulnerabilities-in-core-wordpress-a-bug-hunters-trilogy-part-ii-supremacy/)
 
 GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
