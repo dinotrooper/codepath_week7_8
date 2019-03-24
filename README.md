@@ -26,7 +26,7 @@ Time spent: **X** hours spent in total
       4. Log out of the user and login as an administrator.
       5. View the page and hover over the link.
   - [X] Affected source code:
-    - [Source File](https://core.trac.wordpress.org/changeset/33359)
+    - [Source code](https://core.trac.wordpress.org/changeset/33359)
 2. (Required) Local URIs Server Side Request Forgery (SSRF) - CVE-2016-2222
   - [X] Summary: 
     - Vulnerability types: SSRF
@@ -40,7 +40,7 @@ Time spent: **X** hours spent in total
       2. Create and host a webpage with malicious content similar to `<img src="//wpdistillery/wp-admin/press-this.php?u=http://0.0.0.0:8080&url-scan-submit=Scan" />`
       3. Visit the site while logged in to WordPress
   - [X] Affected source code:
-    - [Source Code](https://core.trac.wordpress.org/changeset/36442)
+    - [Source code](https://core.trac.wordpress.org/changeset/36442)
 3. (Required) Unauthenticated Stored Cross-Site Scripting (XSS) - CVE 2015-3440
   - [X] Summary: 
     - Vulnerability types: XSS
@@ -51,7 +51,7 @@ Time spent: **X** hours spent in total
   - [X] Steps to recreate: 
       1. Make a comment similar to `<a title='x onmouseover=alert(unescape(/XSS/.source)) style=position:absolute;left:0;top:0;width:5000px;height:5000px  AAAAAAAAAAAA...[64 kb]..AAA'></a>` except with 64,000 A's.
   - [X] Affected source code:
-    - [Source Code](https://core.trac.wordpress.org/changeset/32299)
+    - [Source code](https://core.trac.wordpress.org/changeset/32299)
 4. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
@@ -79,7 +79,6 @@ List any additional assets, such as scripts or files
 
 - [WordPress Source Browser](https://core.trac.wordpress.org/browser/)
 - [WordPress Developer Reference](https://developer.wordpress.org/reference/)
-- [Info about CVE 2015-2213](https://blog.checkpoint.com/2015/08/11/finding-vulnerabilities-in-core-wordpress-a-bug-hunters-trilogy-part-ii-supremacy/)
 
 GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
